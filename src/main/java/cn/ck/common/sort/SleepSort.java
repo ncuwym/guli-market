@@ -17,9 +17,8 @@ public class SleepSort {
      * @param nums []
      */
     public static void sleepSort(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            final int num = nums[i];
-            new Thread (()->{
+        for (final int num : nums) {
+            new Thread(() -> {
                 try {
                     Thread.sleep(num);
                 } catch (InterruptedException e) {
