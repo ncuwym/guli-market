@@ -14,7 +14,7 @@ public class SleepSort {
     /**
      * 睡眠排序
      *
-     * @param nums
+     * @param nums []
      */
     public static void sleepSort(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
